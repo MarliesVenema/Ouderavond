@@ -1,0 +1,117 @@
+/* Stijl voor de gehele pagina */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Stijl voor het logo */
+#logo {
+    width: 150px;    /* Pas de breedte aan zoals gewenst */
+    height: auto;    /* Hierdoor wordt de hoogte automatisch aangepast om de verhoudingen te behouden */
+    position: absolute;    /* Hiermee kun je het logo positioneren binnen de header */
+    top: 10px;    /* Pas de gewenste afstand bovenaan aan */
+    right: 10px;    /* Pas de gewenste afstand aan de linkerkant aan */
+}
+
+/* Stijl voor de koptekst (header) */
+header {
+    color: black;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    height: 400px;
+    background-image: url('hoornbeeck-kampen.jpg'); /* Vervang 'achtergrond.jpg' door het pad naar je achtergrondafbeelding */
+    background-size: cover; /* Hiermee wordt de afbeelding geschaald om de hele achtergrond te bedekken */
+    background-position: center; /* Hiermee wordt de afbeelding in het midden van het scherm geplaatst */
+    border: 3px solid grey;
+    border-radius: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 10;
+}
+
+header nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Stijlen voor submenu's */
+nav ul ul {
+    display: none; /* Verberg submenu's standaard */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #eee;
+}
+
+nav ul li:hover ul {
+    display: block; /* Toon submenu bij hover over het hoofditem */
+}
+
+nav ul ul li {
+    padding: 10px;
+}
+
+/* Stijlen voor actieve (geklikte) link */
+nav a:hover,
+nav a:focus {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Optionele stijlen voor actieve submenu-items */
+nav ul ul a:hover,
+nav ul ul a:focus {
+    background-color: #ddd;
+    color: #333;
+}
+
+/* Stijl voor de hoofdtekst (main) */
+main {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+main h2 {
+    color: #333;
+}
+
+/* Stijl voor de voettekst (footer) */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Stijlen voor de zijbalk */
+.sidebar {
+    width: 250px; /* Breedte van de zijbalk aanpassen aan je behoeften */
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: fixed; /* Hiermee wordt de zijbalk vastgezet aan de zijkant van het scherm */
+    height: 100%;
+}
+
+/* Stijlen voor de hoofdinhoud */
+.content {
+    margin-left: 270px; /* Zorg voor een marge aan de linkerkant om ruimte te maken voor de zijbalk */
+    padding: 20px;
+}
+
