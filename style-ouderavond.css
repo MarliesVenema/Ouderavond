@@ -36,6 +36,8 @@ header h1 {
 header nav ul {
     list-style: none;
     padding: 10;
+    display: flex;
+    justify-content: center;
 }
 
 header nav li {
@@ -91,27 +93,35 @@ main h2 {
     color: #333;
 }
 
-/* Stijl voor de voettekst (footer) */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-}
-
 /* Stijlen voor de zijbalk */
 .sidebar {
     width: 250px; /* Breedte van de zijbalk aanpassen aan je behoeften */
     background-color: #333;
     color: #fff;
     padding: 20px;
-    position: fixed; /* Hiermee wordt de zijbalk vastgezet aan de zijkant van het scherm */
-    height: 100%;
+    position: absolute; /* Hiermee wordt de zijbalk vastgezet aan de zijkant van het scherm */
+    height: auto;
 }
 
 /* Stijlen voor de hoofdinhoud */
 .content {
     margin-left: 270px; /* Zorg voor een marge aan de linkerkant om ruimte te maken voor de zijbalk */
     padding: 20px;
+    width: 60%; /* Geef een breedte aan de inhoud (aanpassen naar wens) */
+    margin: 0 auto; /* Het midden van de pagina uitlijnen */
+}
+
+/* Stijlen voor de afbeelding aan de rechterkant */
+.right-image {
+    float: right; /* De afbeelding naar rechts laten drijven */
+    margin: 0 0 10px 10px; /* Optionele marges aanpassen voor uitlijning */
+}
+
+/* Stijl voor de voettekst (footer) */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
 }
 
