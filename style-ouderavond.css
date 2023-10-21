@@ -33,6 +33,23 @@ header h1 {
     margin: 0;
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
 header nav ul {
     list-style: none;
     padding: 10;
@@ -115,6 +132,8 @@ main h2 {
 .right-image {
     float: right; /* De afbeelding naar rechts laten drijven */
     margin: 0 0 10px 10px; /* Optionele marges aanpassen voor uitlijning */
+    height: 300px;
+    font-weight: auto;
 }
 
 /* Stijl voor de voettekst (footer) */
