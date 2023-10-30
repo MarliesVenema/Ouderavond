@@ -178,7 +178,7 @@ main h2 {
 .content {
     margin-left: 270px; /* Zorg voor een marge aan de linkerkant om ruimte te maken voor de zijbalk */
     padding: 20px;
-    width: 70%; /* Geef een breedte aan de inhoud (aanpassen naar wens) */
+    width: 60%; /* Geef een breedte aan de inhoud (aanpassen naar wens) */
     margin: 0 auto; /* Het midden van de pagina uitlijnen */
 }
 
