@@ -84,6 +84,60 @@ nav ul ul li {
     padding: 10px;
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+ 
+nav li {
+    margin-right: 20px;
+    position: relative;
+}
+ 
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: bold;
+    text-transform: none;
+}
+ 
+nav a:hover {
+    color: 333;
+}
+ 
+nav .sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #ddd;
+    list-style: none;
+    padding: 0;
+}
+ 
+nav .ouderavond:hover .sub-menu {
+    display: block;
+    top: 100%;
+    left: 0;
+}
+ 
+nav a:hover {
+    color: #ddd;
+}
+
+nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    background:  #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 /* Stijlen voor actieve (geklikte) link */
 nav a:hover,
 nav a:focus {
@@ -124,7 +178,7 @@ main h2 {
 .content {
     margin-left: 270px; /* Zorg voor een marge aan de linkerkant om ruimte te maken voor de zijbalk */
     padding: 20px;
-    width: 60%; /* Geef een breedte aan de inhoud (aanpassen naar wens) */
+    width: 70%; /* Geef een breedte aan de inhoud (aanpassen naar wens) */
     margin: 0 auto; /* Het midden van de pagina uitlijnen */
 }
 
@@ -132,7 +186,7 @@ main h2 {
 .right-image {
     float: right; /* De afbeelding naar rechts laten drijven */
     margin: 0 0 10px 10px; /* Optionele marges aanpassen voor uitlijning */
-    height: 250px;
+    height: 200px;
     font-weight: auto;
 }
 
